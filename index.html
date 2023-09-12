@@ -8,6 +8,12 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
+		<script>
+			function revealCallback(response) {
+				var reveal = response;
+				window.reveal = reveal;
+			};
+		</script>
 		<script src="https://tag.clearbitscripts.com/v1/pk_9032b5ba1e03b667602f6ff35507dee4/tags.js"
 			referrerpolicy="strict-origin-when-cross-origin"></script>
 		<script>
