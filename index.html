@@ -1,201 +1,67 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>David Noah</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link href="/images/maryland.ico" rel="icon" type="image/x-icon" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
-		<script>
-			function revealCallback(response) {
-				var reveal = response;
-				window.reveal = reveal;
-			};
-		</script>
-		<script src="https://tag.clearbitscripts.com/v1/pk_9032b5ba1e03b667602f6ff35507dee4/tags.js"
-			referrerpolicy="strict-origin-when-cross-origin"></script>
-		<script>
-      var OneSignal = window.OneSignal || [];
-      OneSignal.push(["init", {
-        appId: "35fcbc12-ba30-44f6-b9fd-354c62112a4f",
-        autoRegister: true, /* Set to true to automatically prompt visitors */
-        subdomainName: 'davidnoah',
-        /*
-        subdomainName: Use the value you entered in step 1.4: http://imgur.com/a/f6hqN
-        */
-        httpPermissionRequest: {
-          enable: true
-        },
-        notifyButton: {
-            enable: true /* Set to false to hide */
-        }
-      }]);
-    </script>
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>David Noah</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<style>
+		body,
+		html {
+			height: 100%;
+			margin: 0;
+			font-family: 'Inter', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #FFF176;
+			color: black;
+			text-align: center;
+		}
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">David Noah</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+		.container {
+			width: 90%;
+			max-width: 600px;
+			margin: auto;
+			padding: 20px;
+		}
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="http://davidnoah.me/DavidNoahResume.pdf">Resume</a></li>
-								<li><a href="#projects_page">Projects</a></li>
-								<li><a href="#contact_page">Contact</a></li>
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+		h1 {
+			font-size: 48px;
+			margin-bottom: 20px;
+		}
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<div class="logo"><span class="icon fa-diamond"></span></div>
-							<h2>Hi, I'm David.</h2>
-							<p>A Software Developer currently working at RapidAPI</p>
-							<ul class="actions">
-								<li><a href="http://davidnoah.me/DavidNoahResume.pdf" class="button">Resume</a></li>
-							</ul>
-						</div>
-					</section>
+		a {
+			font-size: 24px;
+			color: black;
+			text-decoration: none;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			transition: background-color 0.3s, color 0.3s;
+			margin-top: 10px;
+		}
 
-				<!-- Wrapper -->
-					<section id="wrapper">
+		img {
+			width: 24px;
+			height: 24px;
+			margin-right: 10px;
+		}
+	</style>
+</head>
 
-						<!-- Three -->
-							<section id="three" class="wrapper spotlight style3">
-								<div class="inner">
-									<a href="#" class="image"><img src="images/climbing_red_river.jpg" alt="" /></a>
-									<div class="content">
-											<h2 class="major">About</h2>
-										<p>I am a software developer currently living in San Francisco with a B.S. in Geographic Information Systems.</p>
-                    <br>
-										<p>When I am not coding, I enjoy traveling, brewing beer, and rock climbing. Leading caving and climbing expeditions has been crucial in developing my skills as a leader and team member. I also organized and ran large scale corporate team building workshops that helped businesses fine tune their group dynamics prior to becoming a software developer.</p>
-										<br>
-										<p>Right now, I am working as a software engineer at RapidAPI.</p>
-									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<a id="projects_page">
-										<h2 class="major">Projects</h2>
-									</a>
-									<p>Below you can look through some of the platforms and projects I have been working on recently.</p>
-									<section class="features">
-										<article>
-											<a href="https://rapidapi.com/" class="image"><img src="images/rapid_home.png" alt="" /></a>
-											<h3 class="major">RapidAPI</h3>
-											<p>A platform designed to help developers test and connect to public APIs</p>
-											<p>Role: Software Engineer and Developer Advocate</p>
-											<a href="https://rapidapi.com/" class="special">Live</a>
-										</article>
-										<article>
-											<a href="http://www.ruckusmusic.org" class="image"><img src="images/ruckus.png" alt="" /></a>
-											<h3 class="major">Ruckus</h3>
-											<p>A music sharing and streaming web application built using React.js and Ruby on Rails.</p>
-											<a href="http://www.ruckusmusic.org" class="special">Live</a>
-											<a href="https://github.com/davidnoah/Ruckus" class="special">Github</a>
-										</article>
-										<article>
-											<a href="http://www.davidnoah.me/DestinationAstraea/" class="image"><img src="images/dest_ast.png" alt="" /></a>
-											<h3 class="major">Destination Astraea</h3>
-											<p>A game built entirely using Javascript and HTML5 Canvas. Inspired by the classic arcade game, Lunar Lander.</p>
-											<a href="http://www.davidnoah.me/DestinationAstraea/" class="special">Live</a>
-											<a href="https://github.com/davidnoah/DestinationAstraea" class="special">Github</a>
-										</article>
-										<article>
-											<a href="https://github.com/davidnoah/RailsLite" class="image"><img src="images/rails_lite.png" alt="" /></a>
-											<h3 class="major">Rails Lite</h3>
-											<p>A web server framework based on Ruby on Rails.</p>
-											<a href="https://github.com/davidnoah/RailsLite" class="special">Github</a>
-										</article>
-										<article>
-											<a href="https://chrome.google.com/webstore/detail/chuckit/afjlblhbiheadjealpfjjdeahfbmpkog?hl=en-US" class="image" ><img src="images/ChuckIt.png" alt="" /></a>
-											<h3 class="major">ChuckIt</h3>
-											<p>A chrome extension that allows a user to temporarily destroy any html element on a webpage.</p>
-											<a href="https://chrome.google.com/webstore/detail/chuckit/afjlblhbiheadjealpfjjdeahfbmpkog?hl=en-US" class="special">Chrome Store</a>
-											<a href="https://github.com/davidnoah/chuck-it" class="special">Github</a>
-										</article>
-										<article>
-											<a href="http://davidnoah.me/minesweeper/" class="image" ><img src="images/minesweeper.png" alt="" /></a>
-											<h3 class="major">React Minesweeper</h3>
-											<p>A version of Minesweeper, built it React.js</p>
-											<a href="http://davidnoah.me/minesweeper/" class="special">Live</a>
-											<a href="https://github.com/davidnoah/minesweeper" class="special">Github</a>
-										</article>
-									</section>
-								</div>
-							</section>
-
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<a id="contact_page">
-								<h2 class="major">Get in touch</h2>
-							</a>
-							<form method="POST" action="https://formspree.io/david.t.noah@gmail.com">
-								<div class="field">
-									<label for="name">Name</label>
-									<input type="text" name="name" id="name" />
-								</div>
-								<div class="field">
-									<label for="email">Email</label>
-									<input type="email" name="email" id="email" />
-								</div>
-								<div class="field">
-									<label for="message">Message</label>
-									<textarea name="message" id="message" rows="4"></textarea>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-
-							<ul class="contact">
-								<li class="fa-home">
-									8B Godeus St.<br />
-									San Francisco, CA 94110
-								</li>
-								<li class="fa-phone">(301) 305-2614</li>
-								<li class="fa-envelope"><a href="mailto:david.t.noah@gmail.com">david.t.noah@gmail.com</a></li>
-								<li class="fa-linkedin"><a href="http://www.linkedin.com/in/davidtylernoah">www.linkedin.com/in/davidtylernoah</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; David Noah. All rights reserved.</li>
-							</ul>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<body>
+	<div class="container">
+		<h1>David Noah</h1>
+		<a href="https://www.linkedin.com/in/david-noah-747aa568/" target="_blank">
+			<img src="https://logo.clearbit.com/linkedin.com" alt="LinkedIn Logo">
+			LinkedIn
+		</a>
+		<a href="https://github.com/davidnoah" target="_blank">
+			<img src="https://logo.clearbit.com/github.com" alt="GitHub Logo">
+			GitHub
+		</a>
+	</div>
+</body>
 </html>
